@@ -29,11 +29,11 @@ I am going to explore (in mostly prioritized order):
 
 - I like plaintext, but one file per month seems odd
 
-5) customize rednotebook to my needs
+7) customize rednotebook to my needs
 
 - vague, but will determine specifics throughout development
 
-6) fix bugs on the launchpad tracker that affect me (will prioritize and flesh these out later)
+8) fix bugs on the launchpad tracker that affect me (will prioritize and flesh these out later)
 
 - https://bugs.launchpad.net/rednotebook/+bug/855443
 - https://bugs.launchpad.net/rednotebook/+bug/1024624
