@@ -1,0 +1,1139 @@
+# Sinhalese translation for rednotebook
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the rednotebook package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rednotebook\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2013-03-31 23:00+0200\n"
+"PO-Revision-Date: 2013-09-02 11:29+0000\n"
+"Last-Translator: Prabath Swarna <prab4th@gmail.com>\n"
+"Language-Team: Sinhalese <si@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-09-03 05:50+0000\n"
+"X-Generator: Launchpad (build 16753)\n"
+
+#: ../rednotebook/backup.py:55
+msgid "It has been a while since you made your last backup."
+msgstr "ඔබ ඔබගෙ අවසාන රක්ෂිතය කර සුලුමොහොතකි"
+
+#: ../rednotebook/backup.py:56
+msgid "You can backup your journal to a zip file to avoid data loss."
+msgstr "ඔබට ඔබගෙ දිනපොත රක්ෂිතය දත්ත නැතිවීමෙන් වැලකීමට සිප් කල හැක"
+
+#: ../rednotebook/backup.py:61
+msgid "Backup"
+msgstr "රක්ෂිත කිරීම"
+
+#: ../rednotebook/backup.py:63
+msgid "Backup now"
+msgstr "දැන් රක්ෂිත කරන්න"
+
+#: ../rednotebook/backup.py:64
+msgid "Ask at next start"
+msgstr "ඊලඟ ආරම්භයේදී අසන්න"
+
+#: ../rednotebook/backup.py:65
+msgid "Never ask again"
+msgstr "කවදාවත් නොඅසන්න"
+
+#: ../rednotebook/gui/main_window.py:281
+msgid "Show RedNotebook"
+msgstr "රෙඩ්දිනපොත නපෙන්වන්න"
+
+#: ../rednotebook/gui/main_window.py:495
+msgid "No directory selected."
+msgstr "ඩිරෙක්ටරියක් තෝරා ගෙන නැත"
+
+#: ../rednotebook/gui/main_window.py:596
+#: ../rednotebook/gui/customwidgets.py:375
+msgid "Template"
+msgstr "ආකෘතිය"
+
+#: ../rednotebook/gui/main_window.py:598
+msgid ""
+"Insert this weekday's template. Click the arrow on the right for more options"
+msgstr "මෙම සතියේ දිනවල ආකෘතිය ඇතිලත් කරන්න.අමතර සඳහා දකුනු ඊතලය ඔබන්න"
+
+#: ../rednotebook/gui/format_menu.py:94
+msgid "No text or tag has been selected."
+msgstr "පාඨ හෝ ඇමුණුම් තෝරා නොමැත"
+
+#: ../rednotebook/gui/format_menu.py:103
+msgid "Bold"
+msgstr "තදකුරු"
+
+#: ../rednotebook/gui/format_menu.py:105
+msgid "Italic"
+msgstr "ඇල අකුරු"
+
+#: ../rednotebook/gui/format_menu.py:107
+msgid "Underline"
+msgstr "යටිඉර"
+
+#: ../rednotebook/gui/format_menu.py:109
+msgid "Strikethrough"
+msgstr "ස්ට්‍රයික්තෲ"
+
+#. ## Translators: Clear format
+#: ../rednotebook/gui/format_menu.py:112
+msgid "Clear"
+msgstr "හිස් කරන්න"
+
+#. ## Translators: Noun
+#: ../rednotebook/gui/format_menu.py:115
+msgid "_Format"
+msgstr "සංයුතිය (_F)"
+
+#. ## Translators: Noun
+#: ../rednotebook/gui/format_menu.py:131 ../rednotebook/gui/exports.py:395
+msgid "Format"
+msgstr "සංයුතිය"
+
+#: ../rednotebook/gui/format_menu.py:132
+msgid "Format the selected text or tag"
+msgstr "තෝරාගත් පාඨයේ හෝ ඇමුණුමේ සංයුතිය"
+
+#: ../rednotebook/gui/customwidgets.py:366
+msgid "Introduction"
+msgstr "හැඳින්වීම"
+
+#: ../rednotebook/gui/customwidgets.py:378
+msgid "Save and insert"
+msgstr "සුරැක ඇතුල් කරන්න"
+
+#: ../rednotebook/gui/clouds.py:79
+msgid "filter, these, comma, separated, words"
+msgstr "මෙම කොමාවන්,වෙන්කිරීම,වචන වෙන්කර දක්වන්න"
+
+#: ../rednotebook/gui/clouds.py:84
+msgid "mtv, spam, work, job, play"
+msgstr "එම්ටීවී,ස්පෑම්,වර්ක්,ජොබ්,ධාවනය"
+
+#: ../rednotebook/gui/clouds.py:184 ../rednotebook/gui/categories.py:52
+#: ../rednotebook/info.py:95 ../rednotebook/util/markup.py:140
+msgid "Tags"
+msgstr "ඇමුණුම්"
+
+#: ../rednotebook/gui/clouds.py:187 ../rednotebook/util/statistics.py:71
+#: ../rednotebook/util/statistics.py:84
+msgid "Words"
+msgstr "වචන"
+
+#: ../rednotebook/gui/clouds.py:246
+#, python-format
+msgid "Hide \"%s\" from clouds"
+msgstr "ක්ලෞඩ්ස් වලින් \"%s\" සඟවන්න"
+
+#: ../rednotebook/gui/exports.py:51 ../rednotebook/gui/exports.py:396
+msgid "Export all days"
+msgstr "සියලු දවස් නිර්යාත කරන්න"
+
+#: ../rednotebook/gui/exports.py:53
+msgid "Export currently selected text"
+msgstr "තෝරා ගත් අකුරු අපනයනය කරන්න"
+
+#: ../rednotebook/gui/exports.py:56
+msgid "Export currently visible day"
+msgstr "දැනට පවතින දිනයක් නිර්යාත කරන්න"
+
+#: ../rednotebook/gui/exports.py:59
+msgid "Export days in the selected time range"
+msgstr "තූරාගත් කාල පරාසයන් තුළ දිනයන් නිර්යාත කරන්න"
+
+#: ../rednotebook/gui/exports.py:68
+msgid "From:"
+msgstr "වෙතින්:"
+
+#: ../rednotebook/gui/exports.py:70
+msgid "To:"
+msgstr "වෙත:"
+
+#: ../rednotebook/gui/exports.py:135
+msgid "Date format"
+msgstr "දින සංයුතිය"
+
+#: ../rednotebook/gui/exports.py:136
+msgid "Leave blank to omit dates in export"
+msgstr "නිර්යාත දිනය සඳහා හිස් ඉඩක් තබන්න"
+
+#: ../rednotebook/gui/exports.py:138
+msgid "Export text and tags"
+msgstr "තෝරා ගත් අකුරු හා ටැග් අපනයනය කරන්න"
+
+#: ../rednotebook/gui/exports.py:139
+msgid "Export text only"
+msgstr "තෝරා ගත් අකුරු පමණක් අපනයනය කරන්න"
+
+#: ../rednotebook/gui/exports.py:141
+msgid "Export tags only"
+msgstr "තෝරා ගත් ටැග් පමණක් අපනයනය කරන්න"
+
+#: ../rednotebook/gui/exports.py:143
+msgid "Filter days by tags"
+msgstr ""
+
+#: ../rednotebook/gui/exports.py:152
+msgid "Available tags"
+msgstr "භාවිතා කළහැකි ඇමුණුම්"
+
+#: ../rednotebook/gui/exports.py:153
+msgid "Selected tags"
+msgstr "තෝරාගත් ඇමුණුම්"
+
+#: ../rednotebook/gui/exports.py:161
+msgid "Select"
+msgstr "තෝරන්න"
+
+#: ../rednotebook/gui/exports.py:162
+msgid "Deselect"
+msgstr "නොතෝරන්න"
+
+#: ../rednotebook/gui/exports.py:257
+msgid "When filtering by tags, you have to select at least one tag."
+msgstr ""
+
+#: ../rednotebook/gui/exports.py:281
+msgid "You have selected the following settings:"
+msgstr "පහත සැකසුම් ඔබ තෝරා ඇත"
+
+#: ../rednotebook/gui/exports.py:306
+msgid "Export Assistant"
+msgstr "නිර්යාත සහායක"
+
+#: ../rednotebook/gui/exports.py:308
+msgid "Welcome to the Export Assistant."
+msgstr "නිර්යාත සහායකයට සාදරයෙන් පිළිගනිමු."
+
+#: ../rednotebook/gui/exports.py:309
+msgid "This wizard will help you to export your journal to various formats."
+msgstr "ඔබගෙ දිනපොත විවිධ සංයුති වලින් නිර්යාත කිරීම සඳහා මෙම විසාඩය උදව් වේ"
+
+#: ../rednotebook/gui/exports.py:310
+msgid ""
+"You can select the days you want to export and where the output will be "
+"saved."
+msgstr "ඔබට නිර්යාත කිරීමට අවශ්‍ය දිනගනන සහ එය සුරැකිය යුතුතැන තේරිය හැක"
+
+#: ../rednotebook/gui/exports.py:320
+msgid "Select Export Format"
+msgstr "නිර්යාත සංයුතිය තෝරන්න"
+
+#: ../rednotebook/gui/exports.py:325
+msgid "Select Date Range"
+msgstr "දින පරාසය තෝරන්න"
+
+#: ../rednotebook/gui/exports.py:330
+msgid "Select Contents"
+msgstr "අන්තර්ගතය තෝරන්න"
+
+#: ../rednotebook/gui/exports.py:336
+msgid "Select Export Path"
+msgstr "නිර්යාත මඟ තෝරන්න"
+
+#: ../rednotebook/gui/exports.py:341
+msgid "Summary"
+msgstr "සාරාංශය"
+
+#: ../rednotebook/gui/exports.py:400 ../rednotebook/gui/search.py:76
+msgid "Date"
+msgstr "දවස"
+
+#: ../rednotebook/gui/exports.py:401
+msgid "Export selected text only"
+msgstr "තෝරා ගත් අකුරු පමණක් අපනයනය කරන්න"
+
+#: ../rednotebook/gui/exports.py:403
+msgid "Start date"
+msgstr "ආරම්භක දිනය"
+
+#: ../rednotebook/gui/exports.py:404
+msgid "End date"
+msgstr "අවසන්වන දිනය"
+
+#: ../rednotebook/gui/exports.py:408
+msgid "Include text"
+msgstr "අකුරු ඇතුල් කරන්න"
+
+#: ../rednotebook/gui/exports.py:409
+msgid "Include tags"
+msgstr ""
+
+#: ../rednotebook/gui/exports.py:411
+msgid "Filtered by tags"
+msgstr ""
+
+#: ../rednotebook/gui/exports.py:412
+msgid "Export path"
+msgstr "නිර්යාත මඟ"
+
+#: ../rednotebook/gui/exports.py:415
+msgid "Yes"
+msgstr "ඔව්"
+
+#: ../rednotebook/gui/exports.py:415
+msgid "No"
+msgstr "නැත"
+
+#: ../rednotebook/gui/exports.py:465 ../rednotebook/gui/exports.py:471
+#, python-format
+msgid "Content exported to %s"
+msgstr "%s ට නිර්යාත කල අන්තර්ගතය"
+
+#: ../rednotebook/gui/exports.py:521
+msgid "Plain Text"
+msgstr ""
+
+#: ../rednotebook/gui/exports.py:552
+msgid "requires pywebkitgtk"
+msgstr "අවශ්‍ය pywebkitgtk"
+
+#: ../rednotebook/gui/menu.py:94
+msgid "_Journal"
+msgstr "_දිනපොත"
+
+#: ../rednotebook/gui/menu.py:96
+msgid "Create a new journal. The old one will be saved"
+msgstr "නව දිනපොතක් නිර්මාණය කිරීම. පරණ දිනපොත සුරැකේ"
+
+#: ../rednotebook/gui/menu.py:99
+msgid "Load an existing journal. The old journal will be saved"
+msgstr "නව දිනපොතක් ප්‍රවේෂනය කිරීම. පරණ දිනපොත සුරැකේ"
+
+#: ../rednotebook/gui/menu.py:104
+msgid ""
+"Save journal at a new location. The old journal files will also be saved"
+msgstr "දිනපොත නව ස්ථානයක සුරැකීම. පරණ දිනපොත සුරැකේ"
+
+#. ## Translators: Verb
+#. ('Import', gtk.STOCK_ADD, _('_Import'),
+#. None, _('Open the import assistant'), self.on_import_menu_item_activate),
+#. ## Translators: Verb
+#: ../rednotebook/gui/menu.py:110
+msgid "Export"
+msgstr "නිර්යාත කිරීම"
+
+#: ../rednotebook/gui/menu.py:111
+msgid "Open the export assistant"
+msgstr "නිර්යාත කිරීම් සහාය විවෘත කිරීම"
+
+#. ## Translators: Verb
+#: ../rednotebook/gui/menu.py:113
+msgid "_Backup"
+msgstr ""
+
+#: ../rednotebook/gui/menu.py:114
+msgid "Save all the data in a zip archive"
+msgstr "සියළු දත්ත සිප් ලෙඛනාගාරයේ සුරැකීම"
+
+#: ../rednotebook/gui/menu.py:115
+msgid "S_tatistics"
+msgstr "සංඛ්‍යන්ක (_t)"
+
+#: ../rednotebook/gui/menu.py:116
+msgid "Show some statistics about the journal"
+msgstr "දිනපොත ගැන සංඛ්‍යාලේඛන කිහිපයක් පෙන්වන්න"
+
+#: ../rednotebook/gui/menu.py:118
+msgid "Shutdown RedNotebook. It will not be sent to the tray."
+msgstr "රෙඩ්දිනපොත වසාදමන්න. එය තැතියට නොයනු ඇත"
+
+#: ../rednotebook/gui/menu.py:121
+msgid "_Edit"
+msgstr "_සකසන්න"
+
+#: ../rednotebook/gui/menu.py:123
+msgid "Undo text or tag edits"
+msgstr "ඇමුණුම හෝ වචනය නැවත අහෝසි කරන්න"
+
+#: ../rednotebook/gui/menu.py:125
+msgid "Redo text or tag edits"
+msgstr "ඇමුණුම හෝ වචනය නැවත වෙනස්කරන්න"
+
+#: ../rednotebook/gui/menu.py:139
+msgid "Underline misspelled words"
+msgstr "වැරදි වචන යටින් ඉරි ඇඳීම"
+
+#: ../rednotebook/gui/menu.py:144
+msgid "_Help"
+msgstr "උදව්(_H)"
+
+#: ../rednotebook/gui/menu.py:145
+msgid "Contents"
+msgstr "අන්තර්ගතය"
+
+#: ../rednotebook/gui/menu.py:146
+msgid "Open the RedNotebook documentation"
+msgstr "රෙඩ්දිනපොත ලියවිල්ල විවෘත කිරීම"
+
+#: ../rednotebook/gui/menu.py:147
+msgid "Get Help Online"
+msgstr "අන්තර්ජාල සහාය ලබාහැනීම"
+
+#: ../rednotebook/gui/menu.py:148
+msgid "Browse answered questions or ask a new one"
+msgstr "පිළිතුරු ප්‍රශ්න විමසීම හෝ නැවත ඇසීම"
+
+#: ../rednotebook/gui/menu.py:149
+msgid "Translate RedNotebook"
+msgstr "රෙඩ්දිනපොත  පරිවර්තනය"
+
+#: ../rednotebook/gui/menu.py:150
+msgid "Connect to the Launchpad website to help translate RedNotebook"
+msgstr "රෙඩ්දිනපොත පරිවර්තනයට සහයට ලෝන්ච්පැඩ් වෙබ් අඩවියට සම්බන්ධවෙන්න"
+
+#: ../rednotebook/gui/menu.py:152
+msgid "Report a Problem"
+msgstr "ගැටලුවක් වාර්ථා කරන්න"
+
+#: ../rednotebook/gui/menu.py:153
+msgid "Fill out a short form about the problem"
+msgstr "ගැටලුව පිළිබඳ කුඩා ආකෘතියක් පිරවන්න"
+
+#: ../rednotebook/gui/menu.py:173
+msgid "Wrong directory"
+msgstr ""
+
+#: ../rednotebook/gui/menu.py:176 ../rednotebook/journal.py:213
+msgid "You cannot use this directory for your journal:"
+msgstr ""
+
+#: ../rednotebook/gui/menu.py:180
+msgid "Please select an empty directory."
+msgstr ""
+
+#: ../rednotebook/gui/menu.py:184
+msgid "This directory contains no journal files:"
+msgstr ""
+
+#: ../rednotebook/gui/menu.py:200
+msgid "Journals are saved in a directory, not in a single file."
+msgstr "දිනපොත් ඩිරෙක්ටරිය තුළ සුරැකේ. තනි ගොනුවක් තුළ නොවේ"
+
+#: ../rednotebook/gui/menu.py:201
+msgid "The directory name will be the title of the new journal."
+msgstr "නව දිනපොතෙ නම ඩිරෙක්ටරියේ නමම වේ"
+
+#: ../rednotebook/gui/menu.py:202
+msgid "Select an empty folder for your new journal"
+msgstr "හිස් ෆෝල්ඩරයක් නව දිනපොතක් සඳහා භාවිතා කරන්න"
+
+#: ../rednotebook/gui/menu.py:205
+msgid "Select an existing journal directory"
+msgstr "දැනට පවතින ඩිරෙක්ටරියක් තෝරන්න"
+
+#: ../rednotebook/gui/menu.py:206
+msgid "The directory should contain your journal's data files"
+msgstr "ඩිරෙක්ටරිය තුල ඔබගෙ දිනපොත්වල තොරතුරු ඇතුලත් විය යුතුය"
+
+#: ../rednotebook/gui/menu.py:213
+msgid "Select an empty folder for the new location of your journal"
+msgstr "ඔබගෙ දිනපොතේ නව නිවේශනයක් සඳහා හිස් ෆෝල්ඩරයක් තෝරන්න"
+
+#: ../rednotebook/gui/menu.py:214
+msgid "The directory name will be the new title of the journal"
+msgstr "ඩිරෙක්ටරි නම නව දිනපොතෙ නම ද වේ"
+
+#: ../rednotebook/gui/menu.py:279
+msgid "RedNotebook Documentation"
+msgstr "රෙඩ්ඩිනපොත් ලියවිල්ල"
+
+#: ../rednotebook/gui/menu.py:298
+msgid "A Desktop Journal"
+msgstr "ඩෙස්ක්ටොප් දිනපොත"
+
+#: ../rednotebook/gui/options.py:84
+msgid "Load RedNotebook at startup"
+msgstr "රෙඩ්දිනපොත ආරම්භයෙදීම ප්‍රවේශනය"
+
+#: ../rednotebook/gui/options.py:154
+msgid "%A, %x, Day %j"
+msgstr "%A, %x, දවස %j"
+
+#: ../rednotebook/gui/options.py:154
+msgid "Week %W of Year %Y"
+msgstr "සතිය %W of වසර %Y"
+
+#: ../rednotebook/gui/options.py:155
+msgid "Day %j"
+msgstr "දවස %j"
+
+#: ../rednotebook/gui/options.py:160
+msgid "Help"
+msgstr "උදව්"
+
+#. ## Translators: Noun
+#: ../rednotebook/gui/options.py:181
+msgid "Preview:"
+msgstr "පෙරදැක්ම:"
+
+#: ../rednotebook/gui/options.py:295
+msgid "Close to system tray"
+msgstr "පද්ධති තැටිය වසාදැමීම"
+
+#: ../rednotebook/gui/options.py:296
+msgid "Closing the window will send RedNotebook to the tray"
+msgstr "වින්ඩෝව වස දැමීමෙන් එය තැටිය තුළට යයි"
+
+#: ../rednotebook/gui/options.py:299
+msgid "Switch between edit and preview mode automatically"
+msgstr ""
+
+#: ../rednotebook/gui/options.py:303
+msgid "Check for new version at startup"
+msgstr "ආරම්භයෙදී නව පරිවර්තනය පරීක්ෂා කරන්න"
+
+#: ../rednotebook/gui/options.py:311
+msgid "Check now"
+msgstr "දැන් පරීක්ෂා කරන්න"
+
+#: ../rednotebook/gui/options.py:316
+msgid "Font Size"
+msgstr "අකුරු ප්‍රමාණය"
+
+#: ../rednotebook/gui/options.py:317
+msgid "Date/Time format"
+msgstr "දිනය/වේලාව ආකෘතිය"
+
+#: ../rednotebook/gui/options.py:318
+msgid "Exclude from cloud"
+msgstr ""
+
+#: ../rednotebook/gui/options.py:319
+msgid "Do not show these comma separated words in the word cloud"
+msgstr ""
+
+#: ../rednotebook/gui/options.py:320
+msgid "Include small words in cloud"
+msgstr ""
+
+#: ../rednotebook/gui/options.py:321
+msgid "Allow these words with 4 letters or less"
+msgstr ""
+
+#: ../rednotebook/gui/search.py:76
+msgid "Text"
+msgstr "පෙළ"
+
+#: ../rednotebook/gui/insert_menu.py:67
+msgid "First Item"
+msgstr "පළමු අයිතමය"
+
+#: ../rednotebook/gui/insert_menu.py:67
+msgid "Second Item"
+msgstr "දෙවැනි අයිතමය"
+
+#: ../rednotebook/gui/insert_menu.py:68
+msgid "Indented Item"
+msgstr "අදහස් කරනලද අයිතමය"
+
+#: ../rednotebook/gui/insert_menu.py:68
+msgid "Two blank lines close the list"
+msgstr "හිස් පේළි දෙකකින් ලැයිස්තුව වසයි"
+
+#: ../rednotebook/gui/insert_menu.py:101
+msgid "Picture"
+msgstr "පිංතූරය"
+
+#: ../rednotebook/gui/insert_menu.py:102
+msgid "Insert an image from the harddisk"
+msgstr "දෘඩ තැටිය තුළින් ඉමේජයක් ඇතුලත් කරන්න"
+
+#: ../rednotebook/gui/insert_menu.py:104
+msgid "File"
+msgstr "ගොනුව"
+
+#: ../rednotebook/gui/insert_menu.py:105
+msgid "Insert a link to a file"
+msgstr "ගොනුවකට සම්බන්ධකයක් ඇතුලත් කරන්න"
+
+#. ## Translators: Noun
+#: ../rednotebook/gui/insert_menu.py:108
+msgid "_Link"
+msgstr "සම්බන්ධකය"
+
+#: ../rednotebook/gui/insert_menu.py:109
+msgid "Insert a link to a website"
+msgstr "වෙබ් පිටුවකට සම්බන්ධකයක් ඇතුලත් කරන්න"
+
+#: ../rednotebook/gui/insert_menu.py:111
+msgid "Bullet List"
+msgstr "බුලට් ලැයිස්තුව"
+
+#: ../rednotebook/gui/insert_menu.py:115 ../rednotebook/gui/insert_menu.py:292
+msgid "Title"
+msgstr "මාතෘකාව"
+
+#: ../rednotebook/gui/insert_menu.py:117
+msgid "Line"
+msgstr "පේළිය"
+
+#: ../rednotebook/gui/insert_menu.py:118
+msgid "Insert a separator line"
+msgstr "වෙන්කිරීමට පේළියක් එක්කරන්න"
+
+#: ../rednotebook/gui/insert_menu.py:124
+msgid "Date/Time"
+msgstr "දිනය/වේලාව"
+
+#: ../rednotebook/gui/insert_menu.py:125
+msgid "Insert the current date and time (edit format in preferences)"
+msgstr "දැන් වේලාව සහ දිනය ඇතුළත් කරන්න"
+
+#: ../rednotebook/gui/insert_menu.py:127
+msgid "Line Break"
+msgstr "වචන වෙන්කිරීම"
+
+#: ../rednotebook/gui/insert_menu.py:128
+msgid "Insert a manual line break"
+msgstr "මැනුවල් පේළි කැඩීමක් ඇතුලත් කිරීම"
+
+#: ../rednotebook/gui/insert_menu.py:130
+msgid "_Insert"
+msgstr "_ඇතුළු කරන්න"
+
+#: ../rednotebook/gui/insert_menu.py:152
+msgid "Insert"
+msgstr "ඇතුළත් කිරීම"
+
+#: ../rednotebook/gui/insert_menu.py:153
+msgid "Insert images, files, links and other content"
+msgstr "ඉමේජස්, ගොනු,සම්බන්ධක සහ වෙනත් අන්තර්ගතයන් ඇතුලත් කිරීම"
+
+#: ../rednotebook/gui/insert_menu.py:189
+msgid "Width (optional):"
+msgstr "පළල (optional)"
+
+#: ../rednotebook/gui/insert_menu.py:194
+msgid "pixels"
+msgstr "පික්සෙල"
+
+#: ../rednotebook/gui/insert_menu.py:215
+msgid "Width must be an integer."
+msgstr ""
+
+#: ../rednotebook/gui/insert_menu.py:279
+msgid "No link location has been entered"
+msgstr "සම්බන්ධක නිශ්චයනයක් ඇතුලත් කර නොමැත"
+
+#: ../rednotebook/gui/categories.py:136
+msgid "Empty entries are not allowed"
+msgstr "හිස් ඇතුලත්කිරීම් සඳහා ඉඩ නොමැත"
+
+#: ../rednotebook/gui/categories.py:408
+msgid "Change this text"
+msgstr "පාඨය වෙනස් කිරීම"
+
+#: ../rednotebook/gui/categories.py:410
+msgid "Add a new entry"
+msgstr "නව නිවේශනයක් එක් කරන්න"
+
+#: ../rednotebook/gui/categories.py:412
+msgid "Delete this entry"
+msgstr "නිවේශනය මකා දැමීම"
+
+#: ../rednotebook/journal.py:214
+msgid "Opening default journal."
+msgstr ""
+
+#: ../rednotebook/journal.py:296
+#, python-format
+msgid "The content has been saved to %s"
+msgstr "අන්තර්ගතය %s ට සුරැකිය"
+
+#: ../rednotebook/journal.py:299
+msgid "Nothing to save"
+msgstr "සුරැකීමට කිසිවක් නැත"
+
+#: ../rednotebook/journal.py:446
+msgid "Error"
+msgstr "දෝෂයක්"
+
+#: ../rednotebook/info.py:96
+msgid "Work"
+msgstr "වැඩ"
+
+#: ../rednotebook/info.py:97
+msgid "Free time"
+msgstr "නිදහස් කාලය"
+
+#: ../rednotebook/info.py:98
+msgid "Todo"
+msgstr "කළයුතු"
+
+#: ../rednotebook/info.py:99
+msgid "Done"
+msgstr "අවසන්"
+
+#: ../rednotebook/info.py:100
+msgid "Remember the milk"
+msgstr "මතක තබාගන්නවා"
+
+#: ../rednotebook/info.py:101
+msgid "Wash the dishes"
+msgstr "ඉවත්කිරීම"
+
+#: ../rednotebook/info.py:103
+msgid "Hello!"
+msgstr "අයුබෝවන්!"
+
+#: ../rednotebook/info.py:104
+msgid ""
+"Some example text has been added to help you start and you can erase it "
+"whenever you like."
+msgstr ""
+"උදව් සඳහා උදහරණ පාඨ ඇතුළත් කර ඇති අතර අවශ්‍ය වූ විටක ඔබට එය මකා දැමිය හැක."
+
+#. ## Translators: "Help" -> noun
+#: ../rednotebook/info.py:107
+msgid ""
+"The example text and more documentation is available under \"Help\" -> "
+"\"Contents\"."
+msgstr ""
+"උදාහරණ සහිතව සහ තවත් තොරතුරු සහිතව \"උදව්\"->\"පටුන\" යටතේ සඳහන්කර ඇත."
+
+#. ## Translators: noun
+#. ## Verb
+#: ../rednotebook/info.py:110 tmp/main_window.glade.h:7
+msgid "Preview"
+msgstr "පෙරදසුන"
+
+#: ../rednotebook/info.py:111
+msgid ""
+"There are two modes in RedNotebook, the __edit__ mode and the __preview__ "
+"mode."
+msgstr "රතු සටහන් පොතෙහි ආකාර දෙකක් පවතී. සංස්කරණ ආකරය සහ පෙරදසුන් ආකාරය ලෙස"
+
+#: ../rednotebook/info.py:112
+msgid "Click on Edit above to see the difference."
+msgstr ""
+
+#: ../rednotebook/info.py:115
+msgid "Tagging is easy."
+msgstr "ටැග් කිරීම පහසුයි"
+
+#: ../rednotebook/info.py:116
+msgid "Just use #hashtags like on twitter."
+msgstr "ට්විටර් වගේ නිකන් #hashtags පාවිච්චි කරන්න"
+
+#: ../rednotebook/info.py:119
+msgid ""
+"Today I went to the //pet shop// and bought a **tiger**. Then we went to the "
+"--pool-- park and had a nice time playing ultimate frisbee. Afterwards we "
+"watched \"__Life of Brian__\"."
+msgstr ""
+"මම අද සුරතල් සතුන් ඇති කඩයකට ගොස් කොටියකු මිලදී ගත්තෙමි. ඊටපසු අපි පිහිනුම් "
+"තටකයට ගොස් සෙල්ලම් කලේය. පසුව \"ලයිෆ් ඔෆ් බ්‍රේන්\" චිත්‍රපටය නැරඹීය."
+
+#. ## Translators: both are verbs
+#: ../rednotebook/info.py:131
+msgid "Save and Export"
+msgstr "සුරැකීම සහ පිටකිරීම"
+
+#: ../rednotebook/info.py:132
+msgid ""
+"Everything you enter will be saved automatically at regular intervals and "
+"when you exit the program."
+msgstr ""
+"ඔබ වැඩසටහනෙන් ඉවත්වන විට විවිධ කාළ පරාසයන් තුළ ඔබ ඇතුළත් කළ සියළු තොරතුරු "
+"ස්වයන්ක්‍රීයව සුරැකෙනු ඇත."
+
+#: ../rednotebook/info.py:133
+msgid "To avoid data loss you should backup your journal regularly."
+msgstr ""
+"තොරතුරු නැතිවී යමෙන් වැලකී සිටීමට නිතර ඔබගෙ දිනපොත බැකප් කර තැබිය යුතුය"
+
+#: ../rednotebook/info.py:134
+msgid ""
+"\"Backup\" in the \"Journal\" menu saves all your entered data in a zip file."
+msgstr ""
+"ඔබ ඇතුළත කල සියලු තොරතුරු සිප් හොනුවක් ලෙස දිනපොත මෙනුවෙහි රක්ෂිත තුල සුරැකේ"
+
+#: ../rednotebook/info.py:135
+msgid "In the \"Journal\" menu you also find the \"Export\" button."
+msgstr "දිනපොත මෙනුව තුළ ඔබට නිර්යාත කිරීමබොත්තම ද දැකගත හැක"
+
+#: ../rednotebook/info.py:136
+msgid ""
+"Click on \"Export\" and export your diary to Plain Text, PDF, HTML or Latex."
+msgstr ""
+"නිර්යාත කිරීම බොත්තම ඔබා ඔබගේ දිනපොත ශුද්ධ වචන පෙළක් ලෙස,පීඩීඑෆ් ලෙස හෝ "
+"එච්ටීඑමෙල් ලෙස, ලේටෙක්ස් ලෙස ලබගන්න"
+
+#: ../rednotebook/info.py:139
+msgid "If you encounter any errors, please drop me a note so I can fix them."
+msgstr "ඔබට දෝෂයක් හමුවුනහොත් මා වෙත සටහන් කරන්න.එවිට මම එය සකස් කරනු ඇත"
+
+#: ../rednotebook/info.py:140
+msgid "Any feedback is appreciated."
+msgstr "ඕනෑම ප්‍රතිචාරයක් අගයකරමි"
+
+#: ../rednotebook/info.py:143
+msgid "Have a nice day!"
+msgstr "සුභ දවසක් වේවා!"
+
+#: ../rednotebook/info.py:164
+msgid ""
+"=== Multiple entries ===\n"
+"You can add multiple entries to a single day by using different journals "
+"(one named \"Work\", the other \"Family\"), separating your entries with "
+"different titles (=== Work ===, === Family ===) and using horizontal "
+"separator lines (20 “=”s)."
+msgstr ""
+
+#: ../rednotebook/info.py:171
+msgid ""
+"=== Work ===\n"
+"Here goes the first entry. It is about #work.\n"
+"\n"
+"====================\n"
+"\n"
+"=== Family ===\n"
+"Here comes the entry about my #family."
+msgstr ""
+
+#: ../rednotebook/templates.py:28
+msgid "Monday"
+msgstr "සඳුදා"
+
+#: ../rednotebook/templates.py:28
+msgid "Tuesday"
+msgstr "අඟහරුවාදා"
+
+#: ../rednotebook/templates.py:28
+msgid "Wednesday"
+msgstr "බදාදා"
+
+#: ../rednotebook/templates.py:28
+msgid "Thursday"
+msgstr "බ්‍රහස්පතින්දා"
+
+#: ../rednotebook/templates.py:29
+msgid "Friday"
+msgstr "සිකුරාදා"
+
+#: ../rednotebook/templates.py:29
+msgid "Saturday"
+msgstr "සෙනසුරාදා"
+
+#: ../rednotebook/templates.py:29
+msgid "Sunday"
+msgstr "ඉරිදා"
+
+#: ../rednotebook/templates.py:108
+msgid ""
+"=== Meeting ===\n"
+"\n"
+"Purpose, date, and place\n"
+"\n"
+"**Present:**\n"
+"+\n"
+"+\n"
+"+\n"
+"\n"
+"\n"
+"**Agenda:**\n"
+"+\n"
+"+\n"
+"+\n"
+"\n"
+"\n"
+"**Discussion, Decisions, Assignments:**\n"
+"+\n"
+"+\n"
+"+\n"
+"==================================\n"
+msgstr ""
+"=== රැස්වීම===\n"
+"\n"
+"අරමුණ,දිනය සහ ස්ථානය\n"
+"\n"
+"**වත්මන්:**\n"
+"+\n"
+"+\n"
+"+\n"
+"\n"
+"\n"
+"**න්‍යාය පත්‍රය:**\n"
+"+\n"
+"+\n"
+"+\n"
+"\n"
+"\n"
+"**සාකච්චාව,තීරන,පැවරුම්:**\n"
+"+\n"
+"+\n"
+"+\n"
+"==================================\n"
+
+#: ../rednotebook/templates.py:132
+msgid ""
+"=== Journey ===\n"
+"**Date:**\n"
+"\n"
+"**Location:**\n"
+"\n"
+"**Participants:**\n"
+"\n"
+"**The trip:**\n"
+"First we went to xxxxx then we got to yyyyy ...\n"
+"\n"
+"**Pictures:** [Image folder \"\"/path/to/the/images/\"\"]\n"
+msgstr ""
+"=== විනෝද ගමන===\n"
+"**දිනය:**\n"
+"\n"
+"**ස්ථානය:**\n"
+"\n"
+"**සහභාගිවූවන්:**\n"
+"\n"
+"**විනෝද ගමන:**\n"
+"පළමුව අපි xxxxx ගියෙමු  ඊලඟට අපි yyyyy ගියෙමු   ...\n"
+"\n"
+"**පිංතූර :** [ඉමේජ ගොනුව \"\"/path/to/the/images/\"\"]\n"
+
+#: ../rednotebook/templates.py:146
+msgid ""
+"==================================\n"
+"=== Phone Call ===\n"
+"- **Person:**\n"
+"- **Time:**\n"
+"- **Topic:**\n"
+"- **Outcome and Follow up:**\n"
+"==================================\n"
+msgstr ""
+"==================================\n"
+"=== දුරකථන ඇමතුම ===\n"
+"- **පුද්ගලය:**\n"
+"- **කාලය:**\n"
+"- **මාතෘකාව:**\n"
+"- **ප්‍රතිඵලය සහ අනුගමනයන්:**\n"
+"==================================\n"
+
+#: ../rednotebook/templates.py:156
+msgid ""
+"=====================================\n"
+"=== Personal ===\n"
+"\n"
+"+\n"
+"+\n"
+"+\n"
+"========================\n"
+"\n"
+"**How was the Day?**\n"
+"\n"
+"\n"
+"========================\n"
+"**What needs to be changed?**\n"
+"+\n"
+"+\n"
+"+\n"
+"=====================================\n"
+msgstr ""
+"=====================================\n"
+"=== පුද්ගලික===\n"
+"\n"
+"+\n"
+"+\n"
+"+\n"
+"========================\n"
+"\n"
+"**දවස කොහොමද?**\n"
+"\n"
+"\n"
+"========================\n"
+"**මොනවද වෙනස් වෙන්න අවශ්‍ය?**\n"
+"+\n"
+"+\n"
+"+\n"
+"=====================================\n"
+
+#: ../rednotebook/templates.py:279
+msgid "Choose Template Name"
+msgstr "ආකෘති නමක් තෝරන්න"
+
+#: ../rednotebook/templates.py:323
+msgid "This template file contains no text or has unreadable content."
+msgstr ""
+
+#: ../rednotebook/templates.py:378
+msgid "This Weekday's Template"
+msgstr "මෙම සතියේදිනවල ආකෘතිය"
+
+#: ../rednotebook/templates.py:381
+msgid "Create New Template"
+msgstr "නව ආකෘතියක් නිර්මණයකරන්න"
+
+#: ../rednotebook/util/dates.py:57
+msgid "Incorrect date format"
+msgstr "වැරදි දින සංයුතියක්"
+
+#: ../rednotebook/util/statistics.py:72
+msgid "Distinct Words"
+msgstr "පැහැදිලි වචන"
+
+#: ../rednotebook/util/statistics.py:73
+msgid "Edited Days"
+msgstr "සංස්කරණ දවස්"
+
+#: ../rednotebook/util/statistics.py:74 ../rednotebook/util/statistics.py:86
+msgid "Letters"
+msgstr "ලිපි"
+
+#: ../rednotebook/util/statistics.py:75
+msgid "Days between first and last Entry"
+msgstr "පළමු සහ අවසාන පිවිසුම් අතර දවස් ගණන"
+
+#: ../rednotebook/util/statistics.py:76
+msgid "Average number of Words"
+msgstr "වචනවල මධ්‍යන්‍යය"
+
+#: ../rednotebook/util/statistics.py:77
+msgid "Percentage of edited Days"
+msgstr "සංස්කරණය කරන ලද දවස් ප්‍රතිශතය"
+
+#: ../rednotebook/util/statistics.py:85
+msgid "Lines"
+msgstr "පේළි"
+
+#: ../rednotebook/util/utils.py:114
+msgid "unknown"
+msgstr "නාඳුනන"
+
+#: ../rednotebook/util/utils.py:129
+#, python-format
+msgid "You have version <b>%s</b>."
+msgstr "ඔබට පරිවර්තන <b>%s</b> ඇත."
+
+#: ../rednotebook/util/utils.py:130
+#, python-format
+msgid "The latest version is <b>%s</b>."
+msgstr "නවතම පරිවර්තන <b>%s</b> වේ."
+
+#: ../rednotebook/util/utils.py:131
+msgid "Do you want to visit the RedNotebook homepage?"
+msgstr "ඔබට රෙඩ්දිනපොතේ නිවෙස් පිටුව බැලීමට අවශ්‍යද?"
+
+#: ../rednotebook/util/utils.py:138
+msgid "Do not ask again"
+msgstr "යළි විමසන්න එපා"
+
+#: tmp/main_window.glade.h:1
+msgid "Go to previous day (Ctrl+PageUp)"
+msgstr "පෙර දිනයට යන්න (Ctrl+PageUp)"
+
+#: tmp/main_window.glade.h:2
+msgid "Jump to today (Alt+Home)"
+msgstr "අද දිනයට යනු (Alt+Home)"
+
+#: tmp/main_window.glade.h:3
+msgid "Today"
+msgstr "අද"
+
+#: tmp/main_window.glade.h:4
+msgid "Go to next day (Ctrl+PageDown)"
+msgstr "ඊලඟ දිනයට යන්න (Ctrl+PageDown)"
+
+#: tmp/main_window.glade.h:5
+msgid "Show a formatted preview of the text (Ctrl+P)"
+msgstr "පාඨයේ සංයුතියේ පෙරදසුන පෙන්වන්න"
+
+#: tmp/main_window.glade.h:8
+msgid "Enable text editing (Ctrl+P)"
+msgstr "පාඨ සංස්කරණය කල හැක (Ctrl+P)"
+
+#: tmp/main_window.glade.h:9
+msgid "Edit"
+msgstr "සංස්කරණය"
+
+#: tmp/main_window.glade.h:10
+msgid "Add a tag or a category entry"
+msgstr "අමුණුමක් හෝ ප්‍රවේශ වර්ගයක් එක් කරන්න"
+
+#: tmp/main_window.glade.h:11
+msgid "Add Tag"
+msgstr "අමුණුමක් එක් කරන්න"
+
+#. ## TRANSLATORS: Replace this string with your names, one name per line.
+#: tmp/main_window.glade.h:13
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Prabath Swarna https://launchpad.net/~prab4th\n"
+"  malith https://launchpad.net/~malithmuditha\n"
+"  චානක මධුෂාන් https://launchpad.net/~chanakalin\n"
+"  පසිඳු කාවින්ද https://launchpad.net/~pkavinda"
+
+#: tmp/main_window.glade.h:14
+msgid "New entry"
+msgstr "නව ප්‍රවේශයක්"
+
+#: tmp/main_window.glade.h:15
+msgid "<b>Select existing or new Category</b>"
+msgstr "<b>පවතින හෝ නව වර්ගයක් තෝරන්න<b>"
+
+#: tmp/main_window.glade.h:16
+msgid "<b>Write entry</b> (optional)"
+msgstr "<b>ප්‍රවේශයක් ලියන්න<b>"
+
+#: tmp/main_window.glade.h:17
+msgid "Select backup filename"
+msgstr "රක්ශිත ගොනුවට නමක් තෝරන්න"
+
+#: tmp/main_window.glade.h:18
+msgid "Select a picture"
+msgstr "පිංතූරයක් තෝරන්න"
+
+#: tmp/main_window.glade.h:19
+msgid "Select a file"
+msgstr "ගොනුවක් තෝරන්න"
+
+#: tmp/main_window.glade.h:20
+msgid "Insert Link"
+msgstr "ඇමුණුම අරඹන්නවෙනස්වීම් ලේඛනයට සුරකින්න"
+
+#: tmp/main_window.glade.h:21
+msgid "<b>Link location (e.g. http://rednotebook.sf.net)</b>"
+msgstr "<b>සම්බන්ධක ස්ථානය (e.g. http://rednotebook.sf.net)<b>"
+
+#: tmp/main_window.glade.h:22
+msgid "<b>Link name (optional)</b>"
+msgstr "<b>සම්බන්ධක නම<b>"
+
+#: tmp/main_window.glade.h:23
+msgid "Select a directory"
+msgstr "ඩිරෙක්ටරියක් තෝරන්න"
+
+#: tmp/main_window.glade.h:24
+msgid "Preferences"
+msgstr "අභිරුචියන්"
+
+#. ## Refers to the part of the options dialog where the user can select the "General/Overall" Settings
+#: tmp/main_window.glade.h:26
+msgid "<b>General</b>"
+msgstr "<b>සාමාන්‍ය</b>"
+
+#. ## Refers to the part of the options dialog where the user can select the "General/Overall" Settings
+#: tmp/main_window.glade.h:28
+msgid "General"
+msgstr "ප්‍රධාන"
+
+#: tmp/main_window.glade.h:29
+msgid "Statistics"
+msgstr "සංඛ්‍යා ලේඛන"
+
+#: tmp/main_window.glade.h:30
+msgid "<b>Selected Day</b>"
+msgstr "<b>තෝරනලද දවස<b>"
+
+#: tmp/main_window.glade.h:31
+msgid "<b>Overall</b>"
+msgstr "<b>සියල්ල<b>"
+
+#: tmp/main_window.glade.h:32
+msgid "Exit without saving"
+msgstr "සුරැකුම් නොකර සංස්කරණය කරන්න"

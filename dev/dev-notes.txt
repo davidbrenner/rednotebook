@@ -1,0 +1,149 @@
+====== Development notes ======
+
+O WYSIWYG as an alternative to markup???
+  notes:
+    2 options: Save in html or txt2tags format
+    HTML Editing: Webkit
+    HTML Saving: Webkit
+    HTML2txt2tags: Vim Script (port to python), https://sourceforge.net/mailarchive/message.php?msg_id=29588583
+    HTML2markdown: python module exists
+    HTML2Latex: Use HTML2txt2tags2Latex (write or use twisted lore)
+    HTML2PDF: xhtml2pdf, http://code.activestate.com/recipes/532908/ possible, but only for plain text (no formatting)
+              webkit is a better option here
+    HTML2ODF: no suitable library at the moment. PyODF is buggy
+
+    http://arstechnica.com/open-source/guides/2009/07/how-to-build-a-desktop-wysiwyg-editor-with-webkit-and-html-5.ars
+
+O Encryption/Password
+  - Save in password protected zipfiles (no open source tool to generate those)
+    seems to be very easy to hack
+  - Symmetric Encryption. AES (best method it seems)
+        with PyCrypto
+          http://www.dlitz.net/software/pycrypto/,
+          http://www.codekoala.com/blog/2009/aes-encryption-python-using-pycrypto/
+          http://idsvandermolen.com/codefiles/crypto.py
+          available in repos of all major distros
+          ezpycrypto unneeded. mostly only simplifies key generation, ...
+        Pure python AES module (check speed)
+  - Truecrypt (Commandline): Would probably work, but requires installation of
+    additional package that is not available in the repos
+
+  --> Use pycrypto only
+
+  - What should be encrypted? Files, Strings? -> Files better
+    Lifeograph only writes to one file, encrypts a string
+
+  - Maybe use only one file for a journal, add journal dependent variables
+  - Maybe compress this file
+
+  - AES uses fixed key-length -> bad for passwords -> use Blowfish with variable length
+  - Blowfish faster than AES
+
+  - Maybe just use 7z (only archive format that is widely known with good encryption (AES-256))
+  - 7z can however also produce zip files with good encryption
+  - For 7z package p7zip is needed (only supports 7z)
+  - binary is called 7zr
+  - Handling of extracted text files only in memory should be possible
+    - What about pictures?
+
+  - Maybe find a way to encrypt the whole directory
+
+  - Best option seems to be 7z. Encrypt the texts and files in a lzma file and
+    password protect it if needed. Use the command line instead of a library.
+
+X Portable Version:
+  Linux users can use the setting too, if all the computers have the RedNotebook
+  requirements installed (pygtk, pyyaml)
+
+  - Provide Option in Setup for running RedNotebook portable. Maybe use file
+    that is only installed, when running this mode.
+
+O Format:
+  - JSON is faster to decode and encode and we only use strings and dicts
+    anyway.
+
+    The results for de-/encoding a typical example are on an HDD:
+    * json_print      1.09020709991
+    * pickle_print    0.710677146912
+    * yaml_print      4.67402696609 -> we already get 2x fast
+    * cyaml_print     1.96824002266 -> json 2x as fast
+    * json_read       0.253901958466
+    * pickle_read     0.15873003006
+    * yaml_read       1.24900007248 -> json 5x as fast
+    * cyaml_read      ?
+
+    SSD:
+    * json_print      1.16
+    * cjson_print     0.16
+    * ujson_print     0.13
+    * cyaml_print     0.87
+    * json_read       0.18
+    * cjson_read      0.10
+    * ujson_read      0.06
+    * cyaml_read      0.69
+
+    However, the format is more verbose and requires more syntax.
+
+O Left-over files:
+  - %APPDATA%\gtk-2.0\gtkfilechooser.ini: Gone in GTK+3
+  - %USERPROFILE%\.gtk-bookmarks: Still present in GTK+3
+  - WebpageIcons.db can probably be disabled in future webkitgtk versions with
+    webkit_icon_database.set_path(None)
+
+O Mobile version:
+  - Kivy (No calendar widget, but probably simple next/prev day navigation is better anyway)
+    - Has ReST renderer (txt2tags->ReST->Rendering)
+    - Vite vite project for business widgets
+  - Qt for android (http://thp.io/2011/pyside-android/)
+  - Django
+  - Google App Engine
+  - Heroku
+  - jQuery Mobile
+  - Sencha Touch
+  - HTML5 + CSS3 + JS
+    - Phonegap (Access low-level features)
+    - Dojo Mobile (Native themes) vs. jQuery Mobile (Non-native theme)
+      --> jQuery Mobile seems to be more qidely adopted and easier.
+    - Modernizr for detecting browser support
+    - Supports all mobile platforms and is even compatible with the Windows Store
+
+O Markdown:
+  - Parsing would need a PEG parser
+  - Allow some common markdown syntax:
+    - Asterisks (*) for lists
+    - Allow triple {{{ and }}} in addition to ``` for code.
+  - docutils could be extended for t2t
+
+O Use Zeitgeist for automatic category entries
+  O Make Zeitgeist widget generic, so it can be reused by other projects
+  X Music tracks or albums (Wrote decibel zeitgeist addon, addons for other players available)
+  X Movies
+  X Web History (Firefox addon written by zeitgeist devs)
+  X Documents, Pictures
+  O Mails (Write Thunderbird zeitgeist addon)
+  X Twitter Messages (gwibber zeitgeist addon written by zeitgeist devs)
+
+O Windows Store:
+  - Annual cost 37 Euro (personal) or 75 Euro (company)
+  - Company account needed for desktop apps
+  - Certification is required also for desktop apps
+
+O Syntax highlighting:
+  - highlight.js via http://cdnjs.com/ or http://softwaremaniacs.org/soft/highlight/en/download/
+  - Alternatives: prettify.js, SyntaxHighlighter
+
+
+Ideas:
+
+Have a viewable panel with a sort of tree-like structure,
+that shows every single entry I've ever added, somewhat similar to how windows
+folders are organised, but with a top level directory for each year, a sublevel
+with months, and an entry level.. with a plus/minus option to display, or not,
+each year/month and maybe a count next to each year/month, so we can quickly
+and easily see how many entries were made each year/month. This would be a
+great addition to the calendar method already available.
+
+Implementation notes:
+- PyYAML saves each string as ascii if it only contains ascii chars.
+  If there are unicode chars, a unicode object is saved.
+- The Days always turn their text into unicode before returning it.
