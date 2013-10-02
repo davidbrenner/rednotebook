@@ -1,5 +1,5 @@
 rednotebook fork
-----------------
+================
 
 The purpose of this fork is to customize rednotebook to my liking. Specifically,
 I am going to explore (in mostly prioritized order):
@@ -54,3 +54,11 @@ some refactoring (and likely a bit more once I switch to markdown).
 This fork is based on revision 1312 of rednotebook.
 
 bzr branch lp:rednotebook -r 1312
+
+dev notes
+---------
+
+Using python markdown (from pypy)
+
+pyandoc for output?
+or, just support markdown input and highlighting, convert to txt2tags, then convert from there?
