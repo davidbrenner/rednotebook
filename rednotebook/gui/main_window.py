@@ -661,7 +661,7 @@ class Preview(browser.HtmlView):
 
         # Show new day
         self.day = new_day
-        html = markup.convert(self.day.text, 'xhtml', self.journal.dirs.data_dir)
+        html = markup.convert_markdown(self.day.text, 'xhtml', self.journal.dirs.data_dir)
         self.load_html(html)
 
         if self.day.last_preview_pos is not None:
