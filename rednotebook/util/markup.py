@@ -68,16 +68,7 @@ CSS = """\
     blockquote {
         margin: 1em 2em;
         border-left: 2px solid #999;
-        font-style: oblique;
         padding-left: 1em;
-    }
-    blockquote:first-letter {
-        margin: .2em .1em .1em 0;
-        font-size: 160%%;
-        font-weight: bold;
-    }
-    blockquote:first-line {
-        font-weight: bold;
     }
     table {
         border-collapse: collapse;
