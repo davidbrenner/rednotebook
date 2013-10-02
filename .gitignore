@@ -4,3 +4,4 @@ po/tmp
 rednotebook/i18n
 .tox
 *.pyc
+rednotebook/user
