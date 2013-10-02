@@ -276,7 +276,7 @@ line = Pattern(r'^\s*([*]{3,}|[-]{3,}|[=]{3,})$', [(1, 'bold'), (1, 'green')])
 
 title_patterns = []
 title_style = [(1, 'gray')]
-titskel = r'^(%s)([^#]*#*)$'
+titskel = r'^(%s)([^#]+?[#]*?)$'
 for level in range(1, 7):
     normal_title_pattern = titskel % ('[#]{%s}' % (level))
     style_name = 'title%s' % level
@@ -293,7 +293,7 @@ pic = Pattern(markup.REGEX_PIC.pattern,
 
 # named local link [my file.txt ""file:///home/user/my file.txt""]
 # named link in web [heise ""http://heise.de""]
-named_link = Pattern(r'(\[)(.*?)(\])\s*[([](.*)[)\]]',
+named_link = Pattern(r'(\[)(.*?)(\])\s*[([](.*?)[)\]]',
         [(1, 'gray'), (2, 'link'), (3, 'gray'), (4, 'grayu')])
 
 # link http://heise.de
