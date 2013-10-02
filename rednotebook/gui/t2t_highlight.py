@@ -212,20 +212,25 @@ class MarkupBuffer(gtk.TextBuffer):
 
 
 styles = {
+    # TODO: clean this up
     'bold':             {'weight': pango.WEIGHT_BOLD},
     'italic':           {'style': pango.STYLE_ITALIC},
     'underline':        {'underline': pango.UNDERLINE_SINGLE},
-    'strikethrough':    {'strikethrough': True},
     'gray':             {'foreground': 'gray'},
     'red':              {'foreground': 'red'},
     'green':            {'foreground': 'darkgreen'},
     'raw':              {'font': 'Oblique'},
     'verbatim':         {'font': 'monospace'},
     'tagged':           {},
+    'code':             {'background': 'gray'},
     'link':             {'foreground': 'blue',
                          'underline': pango.UNDERLINE_SINGLE},
+    'grayu':            {'foreground': 'gray',
+                         'style': pango.STYLE_ITALIC,
+                         'underline': pango.UNDERLINE_SINGLE},
     'highlight':        {'background': 'yellow'},
-    'quote':            {'background': 'gray'},
+    'quote':            {'foreground': 'green',
+                         'weight': pango.WEIGHT_BOLD},
     'tablehead':        {'background': markup.TABLE_HEAD_BG},
     'tablerow':         {'background': '#eee'},
     'formula':          {'style': pango.STYLE_ITALIC, 'family': 'serif'}
@@ -259,30 +264,28 @@ def get_pattern(char, style):
     # Either one char, or two chars with (maybe empty) content
     # between them
     # In both cases no whitespaces between chars and markup
-    regex = r'(%s%s)(\S|\S.*?\S%s*)(%s%s)' % ((char, ) * 5)
+    regex = r'([^\\]%s{1,2})(\S|\S.*?\S%s*)(%s{1,2})' % ((char, ) * 3)
     group_style_pairs = [(1, 'gray'), (2, style), (3, 'gray')]
     return Pattern(regex, group_style_pairs, name=style)
 
 
-bullet_list = Pattern(r"^ *(\-) [^ ].*$", [(1, 'red'), (1, 'bold')], name='list')
-number_list = Pattern(r"^ *(\+) [^ ].*$", [(1, 'red'), (1, 'bold')], name='numlist')
+bullet_list = Pattern(r"^[ \t>]*([-*+]) +[^ \-*].*$", [(1, 'red'), (1, 'bold')], name='list')
+number_list = Pattern(r"^[ \t>]*(\d+\.) +[^ ].*$", [(1, 'red'), (1, 'bold')], name='numlist')
 
-comment = Pattern(r'^(\%.*)$', [(1, 'gray')])
-
-line = Pattern(r'^[\s]*([_=-]{20,})[\s]*$', [(1, 'bold')])
+line = Pattern(r'^\s*([*]{3,}|[-]{3,}|[=]{3,})$', [(1, 'bold'), (1, 'green')])
 
 title_patterns = []
-title_style = [(1, 'gray'), (3, 'gray'), (4, 'gray')]
-titskel = r'^ *(%s)(%s)(\1)(\[[\w-]*\])?\s*$'
-for level in range(1, 6):
-    normal_title_pattern = titskel % ('[=]{%s}' % (level), '[^=]|[^=].*[^=]')
-    number_title_pattern = titskel % ('[+]{%s}' % (level), '[^+]|[^+].*[^+]')
+title_style = [(1, 'gray')]
+titskel = r'^(%s)([^#]*#*)$'
+for level in range(1, 7):
+    normal_title_pattern = titskel % ('[#]{%s}' % (level))
     style_name = 'title%s' % level
     normal_title = Pattern(normal_title_pattern, title_style + [(2, style_name)])
-    number_title = Pattern(number_title_pattern, title_style + [(2, style_name)])
-    title_patterns += [normal_title, number_title]
+    title_patterns += [normal_title]
 
 linebreak = Pattern(r'(%s)' % markup.REGEX_LINEBREAK, [(1, 'gray')])
+
+# TODO: Support multiline regexes (headers)
 
 # pic [""/home/user/Desktop/RedNotebook pic"".png]
 pic = Pattern(markup.REGEX_PIC.pattern,
@@ -290,8 +293,8 @@ pic = Pattern(markup.REGEX_PIC.pattern,
 
 # named local link [my file.txt ""file:///home/user/my file.txt""]
 # named link in web [heise ""http://heise.de""]
-named_link = Pattern(markup.REGEX_NAMED_LINK,
-        [(1, 'gray'), (2, 'link'), (3, 'gray'), (4, 'gray'), (5, 'gray')])
+named_link = Pattern(r'(\[)(.*?)(\])\s*[([](.*)[)\]]',
+        [(1, 'gray'), (2, 'link'), (3, 'gray'), (4, 'grayu')])
 
 # link http://heise.de
 # Use txt2tags link guessing mechanism by setting regex explicitly
@@ -300,35 +303,38 @@ link = Pattern(bank['link'], [(0, 'link')], name='link')
 # We do not support multiline regexes
 #blockverbatim = Pattern(r'^(```)\s*$\n(.*)$\n(```)\s*$', [(1, 'gray'), (2, 'verbatim'), (3, 'gray')])
 
-quote = Pattern(r'^\t+(.*)$', [(1, 'quote')])
+# TODO: Support multiline regexes (blockquote)
+quote = Pattern(r'(?:^|^\t+|^\s{4,})((?:>\s*)+)', [(1, 'quote')])
 
-table_head = Pattern(r'^ *(\|\| .*)', [(1, 'tablehead')])
-table_row = Pattern(r'^ *(\| .*)', [(1, 'tablerow')])
+code = Pattern(r'(?:^\t+|^\s{4,})([^> ].*)', [(1, 'verbatim'), (1, 'code')])
+#code = Pattern(r'^\t+(.*)$', [(1, 'quote')])
 
+# TODO: support forumala
 formula = Pattern(r'(\\\(|\\\[|\$\$)(.+?)(\\\)|\\\]|\$\$)', [(1, 'gray'), (2, 'formula'), (3, 'gray')])
 
 hashtag = Pattern(HASHTAG, [(2, 'red'), (3, 'red')])
 
+italic = Pattern(r'\(^|[^\\]\)*([*_])(\S|\S.*?\S)([*_])', [(1, 'gray'), (2, 'italic'), (3, 'gray')])
+bold = Pattern(r'\(^|[^\\]\)*([*_]{2})(\S|\S.*?\S)([*_]{2})', [(1, 'gray'), (2, 'bold'), (3, 'gray')])
+
 
 patterns = [
-    get_pattern('\*', 'bold'),
-    get_pattern('_', 'underline'),
-    get_pattern('/', 'italic'),
-    get_pattern('-', 'strikethrough'),
+    line,
+    italic,
+    bold,
     bullet_list,
     number_list,
-    comment,
-    line,
+    code,
+    # TODO: clean up raw/verbatim/tagged
     get_pattern('"', 'raw'),
     get_pattern('`', 'verbatim'),
     get_pattern("'", 'tagged'),
     linebreak,
+    # TODO: fix pic
     pic,
     named_link,
     link,
     quote,
-    table_head,
-    table_row,
     formula,
     hashtag,
 ] + title_patterns
