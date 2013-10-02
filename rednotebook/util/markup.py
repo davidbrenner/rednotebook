@@ -25,6 +25,8 @@ import sys
 import gobject
 import pango
 
+import markdown
+
 # Testing
 if __name__ == '__main__':
     sys.path.insert(0, '../../')
@@ -94,6 +96,9 @@ CSS = """\
     hr.heavy {
         height: 2px;
         background-color: black;
+    }
+    img {
+        max-width: 600px;
     }
 </style>
 """ % globals()
@@ -331,6 +336,11 @@ def _convert_paths(txt, data_dir):
     txt = REGEX_NAMED_LINK.sub(_convert_file_path, txt)
     return txt
 
+
+def convert_markdown(txt, target, data_dir, headers=None, options=None):
+    # Turn relative paths into absolute paths.
+    txt = _convert_paths(txt, data_dir)
+    return CSS + markdown.markdown(txt, ['tables'])
 
 def convert(txt, target, data_dir, headers=None, options=None):
     '''
