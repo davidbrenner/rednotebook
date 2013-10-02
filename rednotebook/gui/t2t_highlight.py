@@ -33,7 +33,7 @@ import sys
 
 if __name__ == '__main__':
     sys.path.insert(0, os.path.abspath("./../../"))
-    logging.getLogger('').setLevel(logging.DEBUG)
+    logging.getLogger('rednotebook').setLevel(logging.DEBUG)
 
 from rednotebook.data import HASHTAG
 from rednotebook.external import txt2tags

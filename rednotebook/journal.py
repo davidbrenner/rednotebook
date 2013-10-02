@@ -98,7 +98,7 @@ def setup_logging(log_file):
     sys.stderr = utils.StreamDuplicator(stderr_streams)
     sys.stdout = utils.StreamDuplicator(stdout_streams)
 
-    root_logger = logging.getLogger('')
+    root_logger = logging.getLogger('rednotebook')
     root_logger.setLevel(logging.DEBUG)
 
     # Python adds a default handler if some log is generated before here
