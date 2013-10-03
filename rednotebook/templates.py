@@ -253,6 +253,21 @@ class TemplateManager(object):
         format_string = config.read('dateTimeString', '%A, %x %X')
         date_string = dates.format_date(format_string)
         text = text.replace(u'$date$', date_string)
+        # Plugin hack
+        # TODO: clean this code up
+        from rednotebook import plugins
+        import re
+        # plugin_re matches {PLUGIN:plugin_name} and {PLUGIN:plugin_name:args}
+        plugin_re = re.compile(r'{PLUGIN:(.*?)(?::(.*?))?}')
+        # findall returns array containing tuples (plugin_name, args)
+        re_results = plugin_re.findall(text)
+        
+        for (plugin_name, plugin_args) in re_results:
+            print plugin_name, plugin_args
+            if plugin_class:
+                plugin_class.set_day(self.main_window.journal.date)
+                text = re.sub(r'{PLUGIN:' + re.escape(plugin_name) + r'.*?}',plugin_class.get_text(),text)
+
         return text
 
     def on_save_insert(self, button):
